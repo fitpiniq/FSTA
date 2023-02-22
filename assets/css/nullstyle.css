@@ -1,0 +1,72 @@
+*,
+*::after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    background: #FFFFFF;
+    font-size: 18px;
+    color: #434343;
+    font-family: "TTNorms-Medium", serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 1420px;
+    margin: auto;
+}
+
+@font-face {
+    font-family: "TTNorms-Medium";
+    src: url("../fnt/TTNorms/TTNorms-Medium.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: "TTNorms-ExtraBold";
+    src: url("../fnt/TTNorms/TTNorms-ExtraBold.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: "TTNorms-Regular";
+    src: url("../fnt/TTNorms/TTNorms-Regular.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: "TTNorms-Black";
+    src: url("../fnt/TTNorms/TTNorms-Black.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: "TTNorms-Bold";
+    src: url("../fnt/TTNorms/TTNorms-Bold.ttf") format('truetype');
+}
+
+.section {
+    margin-top: 120px;
+}
+
+.section__title {
+    font-size: 46px;
+    font-family: "TTNorms-Bold", serif;
+    color: #000000;
+}
+
+.section__content {
+    margin-top: 50px;
+}
+
+@media only screen and (max-width: 800px ) {
+    .container {
+        max-width: 95%;
+        margin: auto;
+    }
+
+    .section__title {
+        font-size: 24px;
+    }
+}

@@ -1,0 +1,102 @@
+/* HEADER FOR INDEX.HTML */
+.header {
+    width: 100%;
+    height: 850px;
+    background: url("../img/jpg/header-bg.jpg") center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.header::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .5);
+    z-index: 2;
+}
+
+.header__container {
+    position: relative;
+    z-index: 3;
+    color: #FFF;
+}
+
+.header__content {
+    margin-top: 100px;
+}
+
+h1 {
+    font-size: 48px;
+    text-transform: uppercase;
+    font-family: "TTNorms-ExtraBold", serif;
+    line-height: 81px;
+}
+
+.h1__subtitle {
+    font-size: 26px;
+    color: #CFCFCF;
+    font-family: "TTNorms-Regular", serif;
+    line-height: 40px;
+    margin-top: 10px;
+}
+
+.header__apply-btn {
+    width: 340px;
+    height: 70px;
+    border: 1px solid #2991D6;
+    background: none;
+    color: #2991D6;
+    font-size: 26px;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: .3s all;
+    font-family: "TTNorms-Regular", serif;
+}
+
+.header__apply-btn:hover {
+    background: #2991D6;
+    color: #FFF;
+}
+/* /HEADER FOR INDEX.HTML */
+
+
+
+/* HEADER FOR ABOUT.HTML */
+.header__about {
+    position: relative;
+    background: url("../img/jpg/header-about-bg.jpg") center no-repeat;
+    background-size: cover;
+    height: 300px;
+}
+/* /HEADER FOR ABOUT.HTML */
+
+@media only screen and (max-width: 800px ) {
+    .header {
+        text-align: center;
+        height: 400px;
+    }
+
+    .header__content {
+        margin-top: 0;
+    }
+
+    h1 {
+        font-size: 20px;
+        line-height: 40px;
+    }
+
+    .h1__subtitle {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    
+    .header__apply-btn {
+        width: 230px;
+        height: 50px;
+        font-size: 16px;
+        margin-top: 25px;
+    }
+}
